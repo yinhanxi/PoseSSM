@@ -1,5 +1,5 @@
 ## Dataset setup
-Please download the dataset [here](https://drive.google.com/drive/folders/1gNs5PrcaZ6gar7IiNZPNh39T7y6aPY3g). 
+Please download the h36m dataset [here](https://drive.google.com/drive/folders/1gNs5PrcaZ6gar7IiNZPNh39T7y6aPY3g). 
 
 ```bash
 ${POSE_ROOT}/
@@ -10,7 +10,7 @@ ${POSE_ROOT}/
 ```
 
 ## Test the model
-To test on Human3.6M with detected 2D poses by CPN as inputs, run:
+To test on Human3.6M with 2D poses detected by CPN as inputs, run:
 
 ```
 python main.py --reload --keypoints cpn_ft_h36m_dbb --previous_dir "ckpt/cpn" 
@@ -22,7 +22,7 @@ python main.py --reload --keypoints gt --previous_dir "ckpt/gt"
 ```
 
 ## Train the model
-To train on Human3.6M with detected 2D poses by CPN as inputs, run:
+To train on Human3.6M with 2D poses detected by CPN as inputs, run:
 
 ```
 python main.py --train --keypoints cpn_ft_h36m_dbb -n 'your_exp_name'
