@@ -1,0 +1,7 @@
+einops
+timm
+tensorboardX
+scipy
+filterpy
+tqdm
+transformers
