@@ -9,6 +9,15 @@ ${POSE_ROOT}/
 |   |-- data_2d_h36m_cpn_ft_h36m_dbb.npz
 ```
 
+## Dependencies
+
+- Python 3.10.9 
+- PyTorch 1.12.1
+
+```sh
+pip install -r requirement.txt
+```
+
 ## Test the model
 To test on Human3.6M with 2D poses detected by CPN as inputs, run:
 
