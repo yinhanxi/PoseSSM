@@ -5,8 +5,7 @@ from timm.models.layers import DropPath
 from einops.einops import rearrange
 
 class PoseSSM_module(nn.Module):
-    def __init__(self, dim, num_heads,  qkv_bias=False, qk_scale=None, drop=0., attn_drop=0.,
-                 drop_path=0., norm_layer=nn.LayerNorm, length=1):
+    def __init__(self, dim, drop_path=0., norm_layer=nn.LayerNorm):
         super().__init__()
         self.drop_path = DropPath(drop_path) if drop_path > 0. else nn.Identity()
         self.norm_ssm = norm_layer(dim)
