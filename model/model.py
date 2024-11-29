@@ -17,7 +17,7 @@ class Block(nn.Module):
         self.drop_path = DropPath(drop_path) if drop_path > 0. else nn.Identity()
         self.pose_gcn = GCN_module(dim,dim*2, drop_path=drop_path, norm_layer=nn.LayerNorm)
         self.pose_transformer = Transformer_module(dim, num_heads,qkv_bias=qkv_bias, qk_scale=qk_scale, drop=0.1,attn_drop=attn_drop,drop_path=drop_path, norm_layer=nn.LayerNorm,length=length)
-        self.pose_ssm = PoseSSM_module(dim, num_heads,  qkv_bias=qkv_bias, qk_scale=qk_scale, drop=0.1, attn_drop=attn_drop,drop_path=drop_path, norm_layer=nn.LayerNorm, length=length)
+        self.pose_ssm = PoseSSM_module(dim,drop_path=drop_path, norm_layer=nn.LayerNorm)
 
     def forward(self, x): 
         
