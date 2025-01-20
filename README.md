@@ -45,4 +45,5 @@ python main.py --train --keypoints gt -n 'your_exp_name'
 ```
 
 ## Acknowledgement
-Part of our code is borrowed from [DC-GCT](https://github.com/KHB1698/DC-GCT) and [Mamba](https://github.com/state-spaces/mamba). We thank the authors for releasing the codes.
+Our code is extended from [DC-GCT](https://github.com/KHB1698/DC-GCT) and part of the code is borrowed from [Mamba](https://github.com/state-spaces/mamba).
+We thank the authors for releasing the codes.
