@@ -1,3 +1,5 @@
+# Sequential Joint Dependency Aware Human Pose Estimation with State Space Model (AAAI 2025)
+
 ## Dataset setup
 Please download the h36m dataset [here](https://drive.google.com/drive/folders/1gNs5PrcaZ6gar7IiNZPNh39T7y6aPY3g). 
 
@@ -41,3 +43,6 @@ To train on Human3.6M with GT 2D poses as inputs, run:
 ```
 python main.py --train --keypoints gt -n 'your_exp_name'
 ```
+
+## Acknowledgement
+Part of our code is borrowed from [DC-GCT](https://github.com/KHB1698/DC-GCT) and [Mamba](https://github.com/state-spaces/mamba). We thank the authors for releasing the codes.
