@@ -1,4 +1,4 @@
-# Sequential Joint Dependency Aware Human Pose Estimation with State Space Model (AAAI 2025)
+# [Sequential Joint Dependency Aware Human Pose Estimation with State Space Model (AAAI 2025)](https://ojs.aaai.org/index.php/AAAI/article/view/33029)
 
 ## Dataset setup
 Please download the h36m dataset [here](https://drive.google.com/drive/folders/1gNs5PrcaZ6gar7IiNZPNh39T7y6aPY3g). 
