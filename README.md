@@ -19,6 +19,8 @@ ${POSE_ROOT}/
 ```sh
 pip install -r requirement.txt
 ```
+## Pretrained model
+The checkpoints pretrained with CPN and GT 2D joints as input are located in the `ckpt` folder.
 
 ## Test the model
 To test on Human3.6M with 2D poses detected by CPN as inputs, run:
